@@ -22,8 +22,8 @@ export SCRIPT_NAME=$(basename "$0")
 export SCRIPT_BIN="$(cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P)"
 export SCRIPT_BASE="$(dirname ${SCRIPT_BIN})"
 export EMAIL=${EMAIL:-"admin@virtlab.site"}   # Adding a valid address is strongly recommended
-export HOSTNAME=${HOSTNAME:-$(hostname)}
-export DOMAINNAME=${DOMAINNAME:-"vi"}
+export HOSTNAME=${HOSTNAME:-"cloud"}
+export DOMAINNAME=${DOMAINNAME:-"virtlab.site"}
 export STAGING_ENABLE=${STAGING_ENABLE:-0} # Set to 1 if you're testing your setup to avoid hitting request limits
 
 domains=(${HOSTNAME}.${DOMAINNAME})
