@@ -14,14 +14,14 @@
 # ---------------------------------------------------------------------------
 
 # - Customization -----------------------------------------------------------
-export HOSTNAME=${HOSTNAME:-$(hostname)}                # Hostname for the bastion host
-export DOMAINNAME=${DOMAINNAME:-"trivadislabs.com"}     # Domainname for the bastion host
+export HOSTNAME=${HOSTNAME:-"cloud"}                # Hostname for the bastion host
+export DOMAINNAME=${DOMAINNAME:-"virtlab.site"}     # Domainname for the bastion host
 export EMAIL=${EMAIL:-"admin@${DOMAINNAME}"}            # Adding a valid address is strongly recommended
 export STAGING_ENABLE=${STAGING_ENABLE:-0}              # Set to 1 if you're testing your setup to avoid hitting request limits
 export GUACAMOLE_USER=${GUACAMOLE_USER:-"avocado"}
 export GUACAMOLE_BASE=${GUACAMOLE_BASE:-"/home/${GUACAMOLE_USER}/guacamole"}
 export GUACADMIN_USER=${GUACADMIN_USER:-"guacadmin"}    # guacadmin user name   
-export GUACADMIN_PASSWORD=${GUACADMIN_PASSWORD:-""}     # Password for the guacadmin user
+export GUACADMIN_PASSWORD=${GUACADMIN_PASSWORD:-"Empl0y3r@4321"}     # Password for the guacadmin user
 # - End of Customization ----------------------------------------------------
 
 # - Default Values ----------------------------------------------------------
