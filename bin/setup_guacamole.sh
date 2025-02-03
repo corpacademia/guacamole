@@ -14,8 +14,8 @@
 # ---------------------------------------------------------------------------
 
 # - Customization -----------------------------------------------------------
-export HOSTNAME=${HOSTNAME:-"cloud"}                # Hostname for the bastion host
-export DOMAINNAME=${DOMAINNAME:-"virtlab.site"}     # Domainname for the bastion host
+export HOSTNAME="cloud"                # Hostname for the bastion host
+export DOMAINNAME="virtlab.site"     # Domainname for the bastion host
 export EMAIL=${EMAIL:-"admin@${DOMAINNAME}"}            # Adding a valid address is strongly recommended
 export STAGING_ENABLE=${STAGING_ENABLE:-0}              # Set to 1 if you're testing your setup to avoid hitting request limits
 export GUACAMOLE_USER=${GUACAMOLE_USER:-"avocado"}
@@ -28,7 +28,7 @@ export GUACADMIN_PASSWORD=${GUACADMIN_PASSWORD:-"Empl0y3r@4321"}     # Password 
 export SCRIPT_NAME=$(basename "$0")
 export SCRIPT_BIN="$(cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P)"
 export SCRIPT_BASE="$(dirname ${SCRIPT_BIN})"
-export GITHUP_REPO="https://github.com/oehrlis/guacamole.git"
+export GITHUP_REPO="https://github.com/corpacademia/guacamole.git"
 TIMESTAMP=$(date "+%Y.%m.%d_%H%M%S")
 # define logfile and logging
 LOG_BASE=${LOG_BASE:-"/home/${GUACAMOLE_USER}"}
