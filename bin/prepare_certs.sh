@@ -21,9 +21,9 @@ set -o pipefail         # pipefail exit after 1st piped commands failed
 export SCRIPT_NAME=$(basename "$0")
 export SCRIPT_BIN="$(cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P)"
 export SCRIPT_BASE="$(dirname ${SCRIPT_BIN})"
-export EMAIL=${EMAIL:-""}   # Adding a valid address is strongly recommended
+export EMAIL=${EMAIL:-"admin@virtlab.site"}   # Adding a valid address is strongly recommended
 export HOSTNAME=${HOSTNAME:-$(hostname)}
-export DOMAINNAME=${DOMAINNAME:-"trivadislabs.com"}
+export DOMAINNAME=${DOMAINNAME:-"vi"}
 export STAGING_ENABLE=${STAGING_ENABLE:-0} # Set to 1 if you're testing your setup to avoid hitting request limits
 
 domains=(${HOSTNAME}.${DOMAINNAME})
