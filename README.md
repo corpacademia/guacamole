@@ -12,7 +12,7 @@ This repository contains the mock example for setting up a docker-based guacamol
 
 1. Install `docker` and `docker-compose`. See [Install Docker Compose](https://docs.docker.com/compose/install/#install-compose)
 
-2. Clone this repository: `git clone https://github.com/oehrlis/guacamole.git`.
+2. Clone this repository: `git clone https://github.com/corpacademia/guacamole.git`.
 
 3. Modify configuration
    - Update the `.env` or define the corresponding environment variables.
@@ -53,7 +53,7 @@ This repository contains the mock example for setting up a docker-based guacamol
 Alternatively you can run the script `setup_guacamole.sh` to execute most of the steps above.
 
 ```bash
-git clone https://github.com/oehrlis/guacamole.git
+git clone https://github.com/corpacademia/guacamole.git
 cd guacamole
 export EMAIL="info@example.org"
 export STAGING_ENABLE=1
